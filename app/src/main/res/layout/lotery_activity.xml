@@ -32,7 +32,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp">
 
-        <ru.lopav.kzn.fb.utils.FlipView
+        <ru.lopav.cristmasapp.utils.FlipView
                 android:id="@+id/flipView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -51,10 +51,9 @@
                     app:srcCompat="@drawable/ic_cross"
                     android:layout_gravity="center"/>
 
+        </ru.lopav.cristmasapp.utils.FlipView>
 
-        </ru.lopav.kzn.fb.utils.FlipView>
-
-        <ru.lopav.kzn.fb.utils.FlipView
+        <ru.lopav.cristmasapp.utils.FlipView
                 android:id="@+id/flipView2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -73,10 +72,9 @@
                     app:srcCompat="@drawable/ic_cross"
                     android:layout_gravity="center"/>
 
+        </ru.lopav.cristmasapp.utils.FlipView>
 
-        </ru.lopav.kzn.fb.utils.FlipView>
-
-        <ru.lopav.kzn.fb.utils.FlipView
+        <ru.lopav.cristmasapp.utils.FlipView
                 android:id="@+id/flipView3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -95,10 +93,6 @@
                     app:srcCompat="@drawable/ic_cross"
                     android:layout_gravity="center"/>
 
-
-        </ru.lopav.kzn.fb.utils.FlipView>
-
+        </ru.lopav.cristmasapp.utils.FlipView>
     </LinearLayout>
-
-
 </RelativeLayout>
