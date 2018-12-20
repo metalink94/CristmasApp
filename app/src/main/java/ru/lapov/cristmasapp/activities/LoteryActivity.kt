@@ -8,6 +8,7 @@ import ru.lapov.cristmasapp.R
 import ru.lapov.cristmasapp.dialogs.CongratulationDialog
 import ru.lapov.cristmasapp.dialogs.DialogListener
 import ru.lapov.cristmasapp.utils.FlipView
+import java.util.*
 
 class LoteryActivity : BaseActivity(), DialogListener {
 
@@ -32,7 +33,7 @@ class LoteryActivity : BaseActivity(), DialogListener {
     }
 
     private fun randomizeGame() {
-        val r = Random.nextInt(85) + 1
+        val r = Random().nextInt(85) + 1
         when {
             r % 3 == 0 -> {winnerPos()}
             r % 7 == 0 -> {winnerPos()}
@@ -42,7 +43,7 @@ class LoteryActivity : BaseActivity(), DialogListener {
     }
 
     private fun losePos(r: Int) {
-        val newR = Random.nextInt(r)
+        val newR = Random().nextInt(r)
         when {
             newR % 2 == 0 -> {
                 back1.setImageResource(R.drawable.ic_cup)

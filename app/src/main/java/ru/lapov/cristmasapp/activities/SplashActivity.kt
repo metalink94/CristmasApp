@@ -30,7 +30,7 @@ class SplashActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
-//        getHashKey()
+        getHashKey()
         checkDatabase(getSharedPreferences(APP_PREFERENCES, Context.MODE_PRIVATE))
     }
 

@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.Window
 import kotlinx.android.synthetic.main.hello_dialog.*
+import ru.lapov.cristmasapp.R
 
 class HelloDialog: DialogFragment() {
 

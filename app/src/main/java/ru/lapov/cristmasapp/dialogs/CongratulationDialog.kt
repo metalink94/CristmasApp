@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.Window
 import kotlinx.android.synthetic.main.dialog_layout.*
+import ru.lapov.cristmasapp.R
 
 class CongratulationDialog: DialogFragment() {
 

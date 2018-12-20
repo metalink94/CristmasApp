@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AccelerateDecelerateInterpolator
 import android.widget.FrameLayout
+import ru.lapov.cristmasapp.R
 
 class FlipView : FrameLayout {
 

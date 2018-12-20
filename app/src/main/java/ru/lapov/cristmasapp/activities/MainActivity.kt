@@ -17,6 +17,7 @@ import ru.lapov.cristmasapp.dialogs.DialogListener
 import ru.lapov.cristmasapp.dialogs.HelloDialog
 import ru.lapov.cristmasapp.dialogs.MoneyDialog
 import ru.lapov.cristmasapp.utils.BaseActivity
+import java.util.Random
 
 class MainActivity : BaseActivity(), DialogListener {
 
@@ -58,7 +59,7 @@ class MainActivity : BaseActivity(), DialogListener {
     }
 
     private fun setWinnerPosition() {
-        pos = Random.nextInt(9) + 1
+        pos = Random().nextInt(9) + 1
         Log.d("FB", "get random number $pos")
     }
 
@@ -111,7 +112,7 @@ class MainActivity : BaseActivity(), DialogListener {
     }
 
     private fun getImageResource(): Int {
-        val r = Random.nextInt(20)
+        val r = Random().nextInt(20)
         return when {
             r % 3 == 0 -> R.drawable.ic_meteorite
             r % 4 == 0 -> R.drawable.ic_planet
