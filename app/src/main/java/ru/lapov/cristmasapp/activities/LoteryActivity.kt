@@ -3,8 +3,11 @@ package ru.lapov.cristmasapp.activities
 import android.os.Bundle
 import ru.lapov.cristmasapp.utils.BaseActivity
 import android.os.Handler
+import kotlinx.android.synthetic.main.lotery_activity.*
+import ru.lapov.cristmasapp.R
+import ru.lapov.cristmasapp.dialogs.CongratulationDialog
 import ru.lapov.cristmasapp.dialogs.DialogListener
-import kotlin.random.Random
+import ru.lapov.cristmasapp.utils.FlipView
 
 class LoteryActivity : BaseActivity(), DialogListener {
 

@@ -11,6 +11,7 @@ import android.widget.RelativeLayout
 import android.widget.TextView
 import android.widget.ViewFlipper
 import kotlinx.android.synthetic.main.activity_main.*
+import ru.lapov.cristmasapp.R
 import ru.lapov.cristmasapp.dialogs.CongratulationDialog
 import ru.lapov.cristmasapp.dialogs.DialogListener
 import ru.lapov.cristmasapp.dialogs.HelloDialog
