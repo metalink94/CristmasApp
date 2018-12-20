@@ -1,34 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <android.support.design.widget.AppBarLayout
-        android:layout_height="wrap_content"
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_height="match_parent"
+        tools:context=".activities.MainActivity"
+        android:background="@drawable/bg">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    <TextView
+            android:id="@+id/gold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_gold"
+            android:drawableEnd="@drawable/ic_gold"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="right"
+            android:textColor="@color/gold"
+            android:text="1000"
+            android:drawablePadding="8dp"
+            android:layout_margin="16dp"
+    />
 
-    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center">
 
-    <include layout="@layout/content_main"/>
+        <View
+                android:id="@+id/circle1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/circle"
+                android:layout_marginRight="8dp"/>
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        <View
+                android:id="@+id/circle2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/circle_with_corner"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"/>
 
-</android.support.design.widget.CoordinatorLayout>
+        <View
+                android:id="@+id/circle3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/circle"
+                android:layout_marginLeft="8dp"/>
+
+    </LinearLayout>
+
+    <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rowCount="3"
+            android:columnCount="3"
+            android:layout_gravity="center"
+            android:layout_marginTop="64dp">
+
+    </GridLayout>
+
+
+</LinearLayout>
