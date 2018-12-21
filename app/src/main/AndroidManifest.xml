@@ -15,6 +15,7 @@
             android:label="@string/app_name"
             android:supportsRtl="true"
             android:theme="@style/NoActionBar"
+            android:largeHeap="true"
             android:name=".CristmasApp">
 
         <meta-data android:name="com.facebook.sdk.ApplicationId"
